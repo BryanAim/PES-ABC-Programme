@@ -339,9 +339,9 @@ img {
     height: 70vh;
   }
 
-  .hide-sm {
+  /* .hide-sm {
     display: none;
-  }
+  } */
 
   .showcase-top img {
     top: 30%;
@@ -505,4 +505,10 @@ div.slide > a > img:hover {
 div>h1 {
   color: #fff;
   padding: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
