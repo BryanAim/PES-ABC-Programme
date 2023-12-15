@@ -360,7 +360,7 @@ img {
 
 .card_outer {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 20px;
 }
 .card {
@@ -535,7 +535,14 @@ img {
     padding: 1.2rem 1.6rem;
     text-transform: uppercase;
   }
+
+  .card_outer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
+
 
 @media(max-height: 600px) {
   .showcase-content {
