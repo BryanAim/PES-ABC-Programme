@@ -325,12 +325,12 @@ img {
   height: 85%;
   width: 5px;
   background: #fff;
-  left: 0;
+  left: 5px;
 }
 
 .timeline ul {
   list-style: none;
-  padding: 0 1em 0 1em;
+  padding: 0 1.5em 0 2em;
   z-index: 1;
 }
 .timeline li {
@@ -338,7 +338,13 @@ img {
   padding: 1em;
   margin-bottom: 1em;
   position: relative;
+  transition: all .2s ease-in-out;
 }
+.timeline li:hover {
+  background: var(--primary-color);
+  transform: scale(1.1);
+}
+
 .timeline li:before {
   content: "";
   width: 0;
@@ -349,9 +355,15 @@ img {
   left: -1em;
   top: 0;
 }
+.timeline li:hover::before {
+  border-top: 1em solid var(--primary-color);
+}
 .timeline h3 {
   margin-top: 0;
   color: var(--dark-color);
+}
+.timeline h3:hover {
+  color: ;
 }
 
 
@@ -717,6 +729,9 @@ ul {
     border-right: 1em solid transparent;
     right: -1em;
     left: auto;
+  }
+  .timeline li:nth-child(odd):hover::before {
+    border-top: 1em solid var(--primary-color);
   }
   .timeline li:nth-of-type(2n+1) {
     clear: both;
