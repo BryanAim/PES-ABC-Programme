@@ -55,7 +55,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgba(66, 70, 81, 0.6);
+  background: rgba(66, 70, 81, 0.2);
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
@@ -109,7 +109,11 @@ img {
   line-height: 1.25;
   margin: 0 0 2rem;
 }
-
+.text-lg {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
 
 .footer {
   /* max-width: 70%; */
@@ -348,13 +352,13 @@ img {
 
 
 
-.work, .offer, .sdg {
-  padding-top: 20px;
-  padding-bottom: 70px;
+.organizations, .objective, .scope, .work, .offer, .sdg {
+  padding-top: 40px;
+  padding-bottom: 50px;
   /* background-color: #fff; */
   /* -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5); */
   /* -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.425); */
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 1px 0px rgba(255,255,255,0.9);
 }
 
 div>h1, section>h1 {
@@ -362,6 +366,9 @@ div>h1, section>h1 {
   padding-bottom: 5%;
   text-transform: uppercase;
   font-size: 2em;
+}
+h3 {
+  color: var(--primary-color);
 }
 
 ul {
@@ -494,8 +501,9 @@ ul {
 }
 
 .text-lg {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .text-md {
@@ -527,7 +535,7 @@ ul {
 }
 
 div>h1, section>h1 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 }
 
@@ -557,7 +565,7 @@ img {
 }
 
 .company-card a {
-	color: black;
+	color: var(--primary-color)
 	text-decoration: none;
 }
 
@@ -582,6 +590,7 @@ img {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
  }
 
 .company-card {
@@ -598,7 +607,7 @@ img {
 
 @media screen and (min-width: 60em) {
     .company-card {
-        max-width: calc(25% - 1em);
+        max-width: calc(20% - 1em);
     }
 }
 
@@ -609,6 +618,6 @@ img {
 
 @media screen and (min-width: 52em) {
     .centered {
-        max-width: 70em;
+        max-width: 80em;
     }
 }
