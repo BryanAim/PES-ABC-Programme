@@ -590,7 +590,7 @@ img {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:flex-start;
  }
 
 .company-card {
@@ -607,7 +607,7 @@ img {
 
 @media screen and (min-width: 60em) {
     .company-card {
-        max-width: calc(20% - 1em);
+        max-width: calc(33.3% - 1em);
     }
 }
 
