@@ -594,7 +594,7 @@ img {
  }
 
 .company-card {
-    flex: 1 0 500px;
+    flex: 1 0 200px;
     box-sizing: border-box;
     margin: 1rem .25em;
 }
