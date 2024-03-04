@@ -2,7 +2,7 @@
 :root {
   --primary-color: #004823;
   --dark-color: #1cbadf;
-  --light-color: #fff;
+  --light-color: #f3f3f3;
 }
 
 * {
@@ -14,7 +14,7 @@
 body {
   font-family: 'Aeonik', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #1cbadf;
+  background: var(--light-color);
   color: #999;
 }
 
@@ -112,7 +112,6 @@ img {
 .text-lg {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #fff;
 }
 
 .footer {
@@ -214,7 +213,7 @@ img {
   top: 15%;
   height: 85%;
   width: 5px;
-  background: #fff;
+  background: var(--dark-color);
   left: 5px;
 }
 
@@ -224,7 +223,7 @@ img {
   z-index: 1;
 }
 .timeline li {
-  background: #fff;
+  background: var(--dark-color);
   padding: 1em;
   margin-bottom: 1em;
   position: relative;
@@ -239,7 +238,7 @@ img {
   content: "";
   width: 0;
   height: 0;
-  border-top: 1em solid #fff;
+  border-top: 1em solid var(--dark-color);
   border-left: 1em solid transparent;
   position: absolute;
   left: -1em;
@@ -250,11 +249,9 @@ img {
 }
 .timeline h3 {
   margin-top: 0;
-  color: var(--dark-color);
+  color: var(--light-color);
 }
-.timeline h3:hover {
-  color: ;
-}
+
 
 
 
@@ -350,8 +347,6 @@ img {
 }
 
 
-
-
 .organizations, .objective, .scope, .work, .offer, .sdg {
   padding-top: 40px;
   padding-bottom: 50px;
@@ -361,14 +356,36 @@ img {
   box-shadow: 0px 0px 1px 0px rgba(255,255,255,0.9);
 }
 
+.objective {
+  background: var(--dark-color);
+}
+.objective p{
+  color: #fff;
+}
+.offer {
+  background: var(--dark-color);
+}
+.organizations h1, h3{
+  color: var(--dark-color);
+}
+.scope h1{
+  color: var(--dark-color);
+}
+.scope p{
+  color: #878787;
+}
+.sdg h1{
+  color: var(--dark-color);
+}
+.work h1{
+  color: var(--dark-color);
+}
+
 div>h1, section>h1 {
   color: #fff;
   padding-bottom: 5%;
   text-transform: uppercase;
   font-size: 2em;
-}
-h3 {
-  color: var(--primary-color);
 }
 
 ul {
@@ -448,7 +465,7 @@ ul {
     float: left;
   }
   .timeline li:nth-child(odd):before {
-    border-top: 1em solid #fff;
+    border-top: 1em solid var(--dark-color);
     border-right: 1em solid transparent;
     right: -1em;
     left: auto;
@@ -503,7 +520,6 @@ ul {
 .text-lg {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #fff;
 }
 
 .text-md {
