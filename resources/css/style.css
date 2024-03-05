@@ -160,32 +160,55 @@ img {
   margin-bottom: 1rem;
 }
 
+
 .footer {
-  /* max-width: 70%; */
-  /* margin: 1rem auto; */
-  overflow: auto;
-  background: var(--primary-color);
-  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--primary-color);
 }
 
-.footer,
-.footer a {
-  color: #fff;
-  font-size: 0.9rem;
+.footer-column {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
 }
 
-.footer p {
-  margin-bottom: 1.5rem;
+.footer-column h3 {
+  margin-top: 0;
 }
 
-.footer .footer-cols {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+.footer-column ul {
+  list-style: none;
+  padding: 0;
 }
 
-.footer li {
-  line-height: 1.9;
+.footer-column ul li a {
+  text-decoration: none;
+  color: var(--light-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer form {
+  margin-top: 10px;
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: calc(100% - 120px);
+}
+
+.footer button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.social-icons a {
+  margin-right: 5px;
+  /* Add styles for your social media icons */
 }
 
 
@@ -575,9 +598,7 @@ ul {
   font-size: 1.5rem;
 }
 
-.footer .footer-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
+
 
 .btn-xl {
   font-size: 1.5rem;
@@ -625,6 +646,12 @@ ul {
 div>h1, section>h1 {
   font-size: 1.5em;
 }
+
+.footer-column {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
 }
 
 
