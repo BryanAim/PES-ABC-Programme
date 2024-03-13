@@ -419,6 +419,56 @@ img {
 
 
 
+
+.container1{
+  display: flex;
+  width: 920px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .container1 .box{
+  width: 90%;
+  height: auto;
+  margin-right: 1%;
+  background: white;
+  transition: 0.9;
+  border-radius: 5px;
+  }
+  .box:hover{
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+  cursor: pointer;
+  }
+  .box img{
+  width: 100%;
+  height: 7em;
+  padding: 15px;
+  }
+
+  @media (max-width: 800px){
+  .container1{
+  width: 100%;
+  }
+  }
+  @media (max-width: 600px){
+  .container1{
+  /* width: 85%; */
+  /* display: block; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5px;
+  }
+  .container1 .box{
+  width: 100%;
+  margin-bottom: 4%;
+  }
+  h3 {
+    text-align: center;
+  }
+  }
+
+
+
 .content {
   position: relative;
   display: flex;
@@ -717,15 +767,15 @@ margin-top: 3rem;
 
 
 
-img {
+/* img {
 	display: block;
 	border: 0;
 	width: 100%;
 	height: auto;
-}
+} */
 
 
-.company-card {
+/* .company-card {
 	background: white;
 	margin-bottom: 2em;	
 }
@@ -747,13 +797,13 @@ img {
 	margin-top: 0;
 	margin-bottom: .5em;
 	font-weight: bold;
-}
+} */
 
 
 
 /* Flexbox stuff */
 
-.cards {
+/* .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
@@ -775,7 +825,7 @@ img {
     .company-card {
         max-width: calc(33.3% - 1em);
     }
-}
+} */
 
 .centered {
     margin: 0 auto;
